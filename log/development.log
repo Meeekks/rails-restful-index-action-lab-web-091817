@@ -1928,3 +1928,17 @@ Processing by StudentsController#index as HTML
   [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students"[0m
   Rendered students/index.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2017-10-14 14:28:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/kennethjiang/.rvm/gems/ruby-2.3.3/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 16ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2017-10-14 14:28:36 -0400
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.3ms)[0m  SELECT "students".* FROM "students"
+  Rendered students/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 150ms (Views: 148.0ms | ActiveRecord: 0.7ms)
